@@ -1,0 +1,31 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "Application",
+  "main": "main.js",
+  "dependencies": {
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/android": "^6.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.0.0",
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.mycompany.mytvapp",
+    "productName": "تحصيل",
+    "publish": null,
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "files": [
+      "main.js",
+      "www/**/*",
+      "package.json"
+    ]
+  }
+}
